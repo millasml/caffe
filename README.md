@@ -30,10 +30,11 @@ for req in $(cat requirements.txt); do pip install $req; done
 
 add the following to `.zshrc`:
 ```
-export PATH="/Users/milla/caffe/build/tools:$PATH"
-export PYTHONPATH="/Users/milla/caffe/python:$PYTHONPATH"
+export PATH="/$YOUR_PATH_TO/caffe/build/tools:$PATH"
+export PYTHONPATH="/$YOUR_PATH_TO/caffe/python:$PYTHONPATH"
 ```
 
+Where `$YOUR_PATH_TO` is replaced by your path to the caffe directory.
 This allows you to import caffe in python, as well as run caffe in terminal using the command `caffe`.
 
 
